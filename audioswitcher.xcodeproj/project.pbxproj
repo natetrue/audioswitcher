@@ -1,0 +1,220 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		75237E74124FFC0900D57DE9 /* 7seg.asm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm.asm; path = 7seg.asm; sourceTree = "<group>"; };
+		752B4222167D52AA0079386B /* pic12f683.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = pic12f683.h; path = "../../../../../../usr/local/share/sdcc/non-free/include/pic/pic12f683.h"; sourceTree = "<group>"; };
+		752B4223167D52B50079386B /* pic16f88.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = pic16f88.h; path = "../../../../../../usr/local/share/sdcc/non-free/include/pic/pic16f88.h"; sourceTree = "<group>"; };
+		752B4224167D52BD0079386B /* pic16f628a.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = pic16f628a.h; path = "../../../../../../usr/local/share/sdcc/non-free/include/pic/pic16f628a.h"; sourceTree = "<group>"; };
+		75ACFE1A168CA7320018CB40 /* firmware.dasm */ = {isa = PBXFileReference; lastKnownFileType = text; path = firmware.dasm; sourceTree = "<group>"; };
+		75ACFE1B168CAA5D0018CB40 /* fuses.asm */ = {isa = PBXFileReference; explicitFileType = sourcecode.asm; path = fuses.asm; sourceTree = "<group>"; };
+		75B9D25E1138580500E6FF27 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; usesTabs = 1; };
+		75B9D261113858F200E6FF27 /* main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
+		75B9D262113858F200E6FF27 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		75B9D28011385D5500E6FF27 /* firmware.hex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = firmware.hex; sourceTree = "<group>"; };
+		75B9D28111385D5500E6FF27 /* main.asm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm.asm; path = main.asm; sourceTree = "<group>"; };
+		75B9D2E5113864BF00E6FF27 /* peep.rules */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = peep.rules; sourceTree = "<group>"; };
+		75FC2DE8114FE62E002768A5 /* pov.asm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm.asm; path = pov.asm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* testproj */ = {
+			isa = PBXGroup;
+			children = (
+				75B9D2BD1138606E00E6FF27 /* Ref */,
+				75B9D25D113857F300E6FF27 /* Source */,
+				75B9D27811385D2A00E6FF27 /* Products */,
+				75ACFE1A168CA7320018CB40 /* firmware.dasm */,
+			);
+			name = testproj;
+			sourceTree = "<group>";
+		};
+		75B9D25D113857F300E6FF27 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				75B9D25E1138580500E6FF27 /* Makefile */,
+				75B9D261113858F200E6FF27 /* main.h */,
+				75B9D262113858F200E6FF27 /* main.c */,
+				75B9D2E5113864BF00E6FF27 /* peep.rules */,
+				75ACFE1B168CAA5D0018CB40 /* fuses.asm */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		75B9D27811385D2A00E6FF27 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75B9D28011385D5500E6FF27 /* firmware.hex */,
+				75B9D28111385D5500E6FF27 /* main.asm */,
+				75FC2DE8114FE62E002768A5 /* pov.asm */,
+				75237E74124FFC0900D57DE9 /* 7seg.asm */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75B9D2BD1138606E00E6FF27 /* Ref */ = {
+			isa = PBXGroup;
+			children = (
+				752B4222167D52AA0079386B /* pic12f683.h */,
+				752B4223167D52B50079386B /* pic16f88.h */,
+				752B4224167D52BD0079386B /* pic16f628a.h */,
+			);
+			name = Ref;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		D28A88AD04BDD90700651E21 /* audioswitcher */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(BUILD_STYLE)";
+			buildConfigurationList = 1DEB918F08733D9F0010E9CD /* Build configuration list for PBXLegacyTarget "audioswitcher" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			name = audioswitcher;
+			passBuildSettingsInEnvironment = 1;
+			productName = testproj;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 1DEB919308733D9F0010E9CD /* Build configuration list for PBXProject "audioswitcher" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 08FB7794FE84155DC02AAC07 /* testproj */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D28A88AD04BDD90700651E21 /* audioswitcher */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB919008733D9F0010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = testproj;
+			};
+			name = Debug;
+		};
+		1DEB919108733D9F0010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = testproj;
+			};
+			name = Release;
+		};
+		1DEB919408733D9F0010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					DESK,
+					WRIST,
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.7;
+			};
+			name = Debug;
+		};
+		1DEB919508733D9F0010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = pic;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx10.7;
+			};
+			name = Release;
+		};
+		753B365516836B4A00CA2DB3 /* test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					DESK,
+					WRIST,
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.7;
+			};
+			name = test;
+		};
+		753B365616836B4A00CA2DB3 /* test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = testproj;
+			};
+			name = test;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB918F08733D9F0010E9CD /* Build configuration list for PBXLegacyTarget "audioswitcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB919008733D9F0010E9CD /* Debug */,
+				753B365616836B4A00CA2DB3 /* test */,
+				1DEB919108733D9F0010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB919308733D9F0010E9CD /* Build configuration list for PBXProject "audioswitcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB919408733D9F0010E9CD /* Debug */,
+				753B365516836B4A00CA2DB3 /* test */,
+				1DEB919508733D9F0010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}
