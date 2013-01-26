@@ -96,48 +96,6 @@ void main() {
         //Turn off transmitter and start scanning again
         RB6 = 0;
     }
-    
-//    while (bestActivity < ACTIVITY_THRESHOLD) {
-//        //Scan
-//        bestActivity = 0;
-//        for (channel = 0; channel < NUM_CHANNELS; channel++) {
-//            //Select the channel
-//            PORTB = (PORTB & 0b11110000) | channel;
-//            
-//            //Measure activity
-//            activity = measure_activity();
-//            
-//            //Save if best
-//            if (activity > bestActivity) {
-//                bestActivity = activity;
-//                bestChannel = channel;
-//            }
-//        }
-//        
-//        //Flash the debug light slowly while no signal is found
-//        inactiveTime++;
-//        RB7 = inactiveTime & 0x8 ? 0 : 1;
-//    }
-//    
-//    //Select the channel and light the 'signal found' light
-//    PORTB = (PORTB & 0b11110000) | bestChannel | 0b11000000;
-//    inactiveTime = 0;
-//    do {
-//        //Dwell for a while
-//        wait(DWELL_TIME);
-//        
-//        //Measure activity again
-//        RB7 = 0;
-//        activity = measure_activity();
-//        
-//        if (activity < ACTIVITY_THRESHOLD) {
-//            inactiveTime++;
-//        }
-//        else {
-//            inactiveTime = 0;
-//            RB7 = 1;
-//        }
-//    } while (inactiveTime < INACTIVE_THRESHOLD);
 }
 
 static void scan()
